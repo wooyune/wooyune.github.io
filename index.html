@@ -5,7 +5,10 @@
         <meta chatset="utf-8" /> <!-- utf-8, euc-kr -->
         <meta name="keywords" content="웹퍼블리싱, 계원, html, css" />
     </head>
+
+
     <body> <!--본문-->
+
         <a href="sub.html">서브페이지</a> <!-- 서브페이지 이동 -->
         <a href="http://www.naver.com" target="_blank"> 네이버 </a>
         <a href="https://lostark.game.onstove.com/Promotion/Growth/230913" target="_blank">로스트아크</a>
@@ -95,11 +98,13 @@
     }
  </style>
 
-    <table>
+    <table summary="table기초"> 
+        <caption>테이블 기초</caption> <!--실제로 화면에 표기-->
+
         <tr> <!--row 행 줄-->
-          <th rowspan="2">제목1</th> <!--table header-->
-          <th colspan="2"> 제목2</th> <!--colum 열 칸-->
-          <th>제목3</th>
+          <th scope="col" rowspan="2">제목1</th> <!--table header-->
+          <th scope="col" colspan="2"> 제목2</th> <!--colum 열 칸-->
+          <th scope="col">제목3</th>
         </tr>  
 
         <tr> 
@@ -108,7 +113,54 @@
             <td>내용3</td>
         </tr>
 
-    </table>
+        <thead>표제목</thead>
+        <tbody>표본문</tbody>
+        <tfoot>표끝</tfoot> 
+
+     </table>
+
+      <div>블록(block)형 구획 나누기</div>
+      <span>인라인(inline)형 구획 나누기</span>
+      <!--의미 없이 사용하기 좋은 태그-->
+
+
+      <form>
+         <label for= "name_1">아이디</label>
+          <infut name="name_1" type="text"  placeholder="-기호없이 숫자만 입력" />
+          <input type="password" placeholder="-기호없이 숫자만 입력" />
+
+          <input type="radio" name="p1" checked/>사과
+          <input type="radio"  name="p1" />배
+          <input type="radio"  name="p1" />딸기
+
+          <input type="checkbox" />가을
+          <input type="checkbox" />겨울
+          <input type="checkbox" />봄
+ 
+         <select> <!-- select box, combo box-->
+            <option>네이버</option>
+            <option>구글</option>
+            <option>계원</option>
+
+         </select>
+
+
+         <textarea rows="10" cols="60">내용</textarea>
+
+
+         <input onclick ="alert('버튼클릭');" type="button" value="버튼입니다" />
+
+         <button>
+             <strong>
+             버튼입니다
+             </strong> 
+         </button>
+
+         <input type="submit" value="제출" />
+        
+       </form>
+
+
 
 
 
