@@ -4,11 +4,19 @@
         <title>  서연우의 홈페이지 </title>
         <meta chatset="utf-8" /> <!-- utf-8, euc-kr -->
         <meta name="keywords" content="웹퍼블리싱, 계원, html, css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            body{
+                color:brown;
+                font-size: 10px;
+            }
+        </style>
     </head>
 
 
     <body> <!--본문-->
 
+        <a style="color: pink;" href="sub.html" target="_blank">
         <a href="sub.html">서브페이지</a> <!-- 서브페이지 이동 -->
         <a href="http://www.naver.com" target="_blank"> 네이버 </a>
         <a href="https://lostark.game.onstove.com/Promotion/Growth/230913" target="_blank">로스트아크</a>
@@ -163,6 +171,80 @@
 
 
 
+       <section> <!--같은 주제를가지고 있는 내용의 모임-->
+    
+          <h1> 구획1 제목</h1>
+          구획 1 내용
 
+        </section>
+
+
+        <nav> <!--네비게이션, 페이지 이동 버튼 모임-->
+        
+          <ul>
+            <li><a href="링크주소">링크버튼</a></li>
+            <li><a href="링크주소">링크버튼</a></li>
+           </ul>
+        
+        </nav>
+
+
+        <article> <!--연관성이 다소 적은 내용의 모임-->
+        <h1>기사제목</h1>
+            기사내용
+        </article>
+
+
+    
+        <aside><!--연관성이 아얘 없는 내용의 모임-->
+            <h1>광고제목</h1>
+             광고내용
+        </aside>
+
+
+        <header></header> <!--본문내에서의 서론 -->
+        <footer></footer> <!--몬문내에서의 결론 -->
+
+     <canvas id="myCanvas"></canvas>
+
+     <script>
+        var canvas = document.getElementById("myCanvas"); //myCanvas라는 이름의 canvas element를 받아옵니다.
+        var ctx = canvas.getContext("2d"); //2D canvas를 생성합니다.
+        ctx.fillStyle = "#FF0000"; //색을 지정합니다.
+        
+        ctx.fillRect(25, 25, 100, 100); //채움 사각형
+        ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+        ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+        
+        ctx.fillStyle = "#000000";
+        ctx.beginPath(); //선그리기 시작
+        ctx.moveTo(65, 75); //펜 들어 움직이기
+        ctx.lineTo(90, 95); //선 그으며 움직이기
+        ctx.lineTo(90, 55);
+        ctx.fill(); //내부 채우기
+        
+        ctx.beginPath();
+        ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+        ctx.moveTo(260, 75);
+        ctx.arc(225, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+        ctx.moveTo(215, 65);
+        ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+        ctx.moveTo(245, 65);
+        ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+        ctx.stroke();
+
+      </script>   
+
+
+<audio controls>
+    <source src="audio/y2mate.com - 4K 조용한 밤 비소리 들어보세요 저작권 없는 영상 Free Stock Video 빗소리ASMR 힐링 숙면 raining sounds.mp3" type="audio/wav" />
+  </audio>
+
+    
+    <video controls>
+        <source src="mp4/file_example_MP4_480_1_5MG.mp4" type="video/mp4" />
+
+    </video>
     </body>
+    
 </html>
